@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:background="#fefefe"
+    android:clipToPadding="false"
+    tools:context=".MainActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_fileName="airplane_flying.json"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="12dp"
+        android:gravity="center">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_anim_one"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_margin="12dp"
+            android:src="@drawable/ic_one"
+            app:backgroundTint="@color/colorOrange"
+            app:fabSize="normal"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_anim_two"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_margin="12dp"
+            android:src="@drawable/ic_two"
+            app:backgroundTint="@color/colorOrange"
+            app:fabSize="normal"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_anim_three"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_margin="12dp"
+            android:src="@drawable/ic_three"
+            app:backgroundTint="@color/colorOrange"
+            app:fabSize="normal"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_anim_four"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_margin="12dp"
+            app:backgroundTint="@color/colorOrange"
+            android:src="@drawable/ic_looks_4_black_24dp"
+            app:fabSize="normal"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
